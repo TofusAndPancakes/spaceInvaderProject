@@ -1,0 +1,482 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    float: left;
+
+    display: grid;
+    grid-template-columns: 1fr 800px 1fr;
+    grid-template-rows: 1fr 800px 1fr;
+    gap: 0px;
+
+    background-color: #263238;
+}
+
+.menuSpace {
+    width: 100%;
+    height: 800px;
+    min-height: 800px;
+    position: relative;
+    float: left;
+
+    grid-column: 2;
+    grid-row: 2;
+
+    background-color: #301c48;
+
+    z-index: 0;
+
+    display: grid;
+    grid-template-columns: 1fr 80% 1fr;
+    grid-template-rows: 1fr 80% 1fr;
+
+}
+
+.menuContainer {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    float: left;
+
+    grid-column: 2;
+    grid-row: 2;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuTitle {
+    width: 100%;
+    height: auto;
+    position: relative;
+    float: left;
+
+    text-align: center;
+
+    margin-bottom: 20px;
+}
+
+.menuTitle h1 {
+    font-family: "Press Start 2P", serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 60px;
+}
+
+.menuDescription {
+    width: 100%;
+    height: auto;
+    position: relative;
+    float: left;
+}
+
+.menuDescription h2 {
+    font-family: "Press Start 2P", serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #ffee58;
+    font-size: 32px;
+
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.menuDescription p {
+    font-family: "Silkscreen", serif;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 28px;
+
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+.menuHighScoreContainer {
+    background-color: #2f2738;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.menuButton {
+    width: 100%;
+    height: auto;
+    position: relative;
+    float: left;
+
+    text-align: center;
+}
+
+.menuButton button {
+    width: 100%;
+    height: auto;
+    background-color: #2f2738;
+    cursor: pointer;
+}
+
+.menuButton button:hover {
+    background-color: #533f6c;
+}
+
+.menuButton p {
+    font-family: "Press Start 2P", serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 48px;
+
+    margin: 20px;
+}
+
+.gameEndSpace {
+    width: 100%;
+    height: 800px;
+    min-height: 800px;
+    position: relative;
+    float: left;
+
+    grid-column: 2;
+    grid-row: 2;
+
+    background-color: #301c48;
+
+    z-index: -1;
+
+    display: grid;
+    grid-template-columns: 1fr 80% 1fr;
+    grid-template-rows: 1fr 80% 1fr;
+}
+
+.gameEndSpaceContainer {
+    width: 100%;
+    height: auto;
+    position: relative;
+    float: left;
+
+    grid-column: 2;
+    grid-row: 2;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gameEndTitle {
+    width: 100%;
+    height: auto;
+    position: relative;
+    float: left;
+
+    text-align: center;
+}
+
+.gameEndTitle h2 {
+
+    font-family: "Press Start 2P", serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 60px;
+
+    margin-bottom: 20px;
+}
+
+.gameEndStatus {
+    width: 100%;
+    height: auto;
+    position: relative;
+    float: left;
+
+    font-family: "Silkscreen", serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 30px;
+
+    color: #ffffff;
+    text-align: center;
+}
+
+.gameEndScore {
+    width: 100%;
+    height: auto;
+    position: relative;
+    float: left;
+
+    font-family: "Silkscreen", serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 30px;
+
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.gameEndSaveContainer {
+    width: 100%;
+    height: auto;
+    position: relative;
+    float: left;
+    background-color: #2f2738;
+    
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.gameEndSaveContainer p {
+    font-family: "Silkscreen", serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: #ffffff;
+
+    margin-bottom: 10px;
+
+    text-align: center;
+}
+
+.gameEndSave {
+    width: 100%;
+    height: auto;
+    position: relative;
+    float: left;
+
+    text-align: center;
+
+    margin-bottom: 10px;
+}
+
+.gameEndSave h2 {
+    font-family: "Press Start 2P", serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #ffee58;
+    font-size: 32px;
+}
+
+.gameEndSaveForm {
+    width: 100%;
+    height: auto;
+    position: relative;
+    float: left;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gameEndFormField {
+    width: 80%;
+    height: auto;
+    position: relative;
+    float: left;
+
+    padding-left: 10px;
+    padding-right: 10px;
+
+    font-family: "Silkscreen", serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 30px;
+
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+.gameEndSaveButton button {
+    width: 100%;
+    height: auto;
+    background-color: #2f2738;
+    cursor: pointer;
+
+    padding: 10px;
+}
+
+.gameEndSaveButton button:hover {
+    background-color: #533f6c;
+}
+
+.gameEndSaveButton p {
+    font-family: "Silkscreen", serif;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 32px;
+
+    margin-bottom: 10px;
+}
+
+.gameEndButton button {
+    width: 100%;
+    height: auto;
+    background-color: #2f2738;
+    cursor: pointer;
+}
+
+.gameEndButton button:hover {
+    background-color: #533f6c;
+}
+
+.gameEndButton p {
+    font-family: "Press Start 2P", serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 1.5;
+    color: #ffffff;
+    font-size: 48px;
+
+    margin: 20px;
+}
+
+.playSpace {
+    width: 100%;
+    height: 800px;
+    min-height: 800px;
+    position: relative;
+    float: left;
+
+    grid-column: 2;
+    grid-row: 2;
+
+    z-index: 1;
+
+    background-image: url("../images/spaceBackground.png");
+
+}
+
+.playerCannon {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    float: left;
+
+    position: absolute;
+    left: calc(50% - 50px);
+    bottom: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 3;
+}
+
+.playerCannon img {
+    width: 100%;
+    height: auto;
+}
+
+.bullet {
+    width: 16px;
+    height: 32px;
+    position: relative;
+    float: left;
+
+    position: absolute;
+    left: calc(50% - 50px);
+    bottom: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 2;
+}
+    
+.bullet img {
+    width: 100%;
+    height: auto;
+}
+
+.alien {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    float: left;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 3;
+}
+
+.alien img {
+    width: 100%;
+    height: auto;
+}
+
+.alienBullet {
+    width: 16px;
+    height: 32px;
+    position: relative;
+    float: left;
+
+    z-index: 2;
+
+    position: absolute;
+    left: calc(50% - 50px);
+    bottom: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 2;
+}
+
+.alienBullet img {
+    width: 100%;
+    height: auto;
+}
+
+.explosion {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    float: left;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 4;
+}
+
+.UI {
+    width: 100%;
+    height: auto;
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin-top: 10px;
+
+    z-index: 50;
+}
+
+.UI p {
+    font-family: "Silkscreen", serif;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 32px;
+
+    margin-bottom: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+

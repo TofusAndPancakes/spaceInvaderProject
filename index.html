@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Invaders - Aliens from Space Invading Us?</title>
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <!-- FavIcon -->
+    <link rel="shortcut icon" href="images/alienCharacterLarge.png">
+    
+    <!-- CSS Stuff -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Javascript Stuff -->
+    <script src="script/script.js"></script>
+
+    <!-- Fonts Used -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Silkscreen:wght@400;700&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="container" id="container">
+        <div class="menuSpace" id="menuSpace">
+            <div class="menuContainer">
+                <div class="menuTitle">
+                    <h1>Space<br>Invaders!</h1>
+                </div>
+                <div class="menuDescription">
+                    <div class="menuHighScoreContainer">
+                        <h2>Leaderboard</h2>
+                        <div class="menuHighScore" id="menuHighScore">
+                        </div>
+                    </div>
+                    <div class="menuButton">
+                        <button id="gameStart">
+                            <p>Game Start!</p>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="gameEndSpace" id="gameEndSpace">
+            <div class="gameEndSpaceContainer">
+                <div class="gameEndTitle"><h2>Game Over!</h2></div>
+                <div class="gameEndStatus" id="gameEndStatus">Died due to</div>
+                <div class="gameEndScore" id="gameEndScore">0 Final Score!</div>
+
+                <div class="gameEndSaveContainer" id="gameEndForm">
+                    <div class="gameEndSave"><h2>Save Your Score!</h2></div>
+                        <p>Scores are saved in LocalStorage!</p>
+                        <form class="saveUser" id="myForm">
+                            <div class="gameEndSaveForm">
+                                <input class="gameEndFormField" id="formName" name="name" value="" placeholder="Name Here!" autocomplete="off">
+                                <input class="gameEndFormField" type="hidden" id="formScore" name="score" value="0" placeholder="score"  autocomplete="off">
+                                <div class="gameEndSaveButton">
+                                    <button type="submit">
+                                        <p>Submit</p>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    <div class="formStatus" id="formStatus"><p></p></div>
+                </div>
+
+                <div class="gameEndContent">
+                    <div class="gameEndButton">
+                        <button id="menuReturn"><p>Return to Menu</p></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
